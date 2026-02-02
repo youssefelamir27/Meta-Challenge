@@ -1,3 +1,7 @@
+/**
+ * Meta-Task API
+ * A secure, rate-limited task management API with JWT authentication
+ */
 require('dotenv').config();
 
 const express = require('express');
