@@ -2,7 +2,10 @@
  * Meta-Task API
  * A secure, rate-limited task management API with JWT authentication
  */
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
 
 const express = require('express');
 const helmet = require('helmet');
