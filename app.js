@@ -12,7 +12,7 @@ const helmet = require('helmet');
 const app = express();
 const port = process.env.PORT || 3000;
 const host = '0.0.0.0';                 // MUST listen on all interfaces (not localhost)
-
+app.set('trust proxy', 1);
 app.use(helmet());
 
 app.use(express.json());
